@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    cursor: url('https://img.icons8.com/?size=20&id=1lIM0pMCv5Rs&format=png&color=7950F2'), auto; /* Default custom cursor */
+}
+
+/* Custom Cursor */
+.fancy-cursor {
+    cursor: url('https://img.icons8.com/?size=20&id=1lIM0pMCv5Rs&format=png&color=7950F2'), pointer; /* Pointer cursor */
+}
+
+/* Navbar Links */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #a855f7; /* Purple Hover */
+}
+
+/* Button Styles */
+button, a {
+    cursor: url('https://img.icons8.com/?size=20&id=1lIM0pMCv5Rs&format=png&color=7950F2'), pointer; /* Fix cursor on buttons */
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+nav, section {
+    animation: fadeIn 0.8s ease-in-out;
+}
